@@ -24,23 +24,6 @@ public class ConstructStringFromBinaryTree {
         return s;
     }
 
-//    private static String constructString(TreeNode root) {
-//        if (root == null) {
-//            return null;
-//        }
-//        String s = "" + root.val;
-//        String left = constructString(root.left);
-//        String right = constructString(root.right);
-//        if (left == null && right != null) {
-//            return s + "()" + "(" + right + ")";
-//        } else if (left != null && right == null) {
-//            return s + "(" + left + ")";
-//        } else if (left != null && right != null) {
-//            return s + "(" + left + ")" + "(" + right + ")";
-//        }
-//        return s;
-//    }
-
     private static class TreeNode {
         int val;
         TreeNode left;
